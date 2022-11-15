@@ -23,7 +23,7 @@ end
 # Write the conditions string with ? as placeholders
 # Additional parameters to the .where method replace the ? to form the query
 @womens_stores = Store.where('womens_apparel = ? AND annual_revenue < ?', true, 1000000)
-pp @womens_stores
+# pp @womens_stores
 
 # Alternative approach using range
 # @womens_stores = Store.where(womens_apparel: true, annual_revenue: ...1000000)
